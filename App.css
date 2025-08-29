@@ -1,0 +1,127 @@
+
+body {
+  background-color: #282c34;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  padding: 2rem;
+}
+
+.qa-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.question-input {
+  width: 80%;
+  max-width: 600px;
+  min-height: 100px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.image-input {
+  display: none; /* Hide the default file input */
+}
+
+.image-upload-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff; /* Blue color for upload button */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 1rem;
+}
+
+.image-upload-button:hover {
+  background-color: #0056b3;
+}
+
+.image-preview-container {
+  position: relative;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.image-preview {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.remove-image-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 1rem;
+}
+
+.ask-button,
+.voice-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #61dafb;
+  color: #282c34;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ask-button:disabled,
+.voice-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ask-button:hover:not(:disabled),
+.voice-button:hover:not(:disabled) {
+  background-color: #4caf50;
+}
+
+.voice-button.listening {
+  background-color: #ffc107; /* A different color when listening */
+}
+
+.answer-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.answer-section h2 {
+  margin-top: 0;
+}
